@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head> 
+		<meta charset = "utf-8">
+		<link rel="stylesheet" type="text/css" href="EstiloPuzzle.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="bootstrap.css" >
+		<script type="text/javascript" src="puzzle.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+		<link rel="Icon" href="IconoTitulo.ico" />
+		<title>Puzzle UH</title>
+	</head>
+	
+	<body> 
+		
+		<header> 
+			<div class="row">
+				<div class="col-md-5"> 
+				</div>
+				<div class="col-md-4"> 
+					<div class="wordart blues">
+						<span class="text">Puzzle UH</span>
+					</div>
+				</div>
+				<div class="col-md-3"> 
+				</div>
+			</div>
+		</header>
+		
+		<div>
+			<div class="row">
+				<div class="col-md-1"> 
+				</div>
+				<div class="col-md-2" >
+						<br>
+						<br>
+						<button type="button" class="btn btn-primary" id="jugar" onClick="InicioCronometro()"  >Iniciar Juego</button>
+						<br>
+						<br>
+						<button type="button" class="btn btn-danger" id = "detener" onClick= "detenerCronometro()">Detener Juego</button>
+						<br>
+						<br>
+						<img id = "ganador" src="ganador.gif" alt="ImagenGanador"></img>
+						<br>
+						<br>
+						<button type="button" class="btn btn-info" id = "reset" onClick= "resetearCronometro()">Resetear tiempo</button>
+				</div>
+				<div class="col-md-6"> 
+					<div class = "panelTransparente">
+						<h5 id = "anuncio">Oprima "Iniciar Juego" para nueva partida</h5>
+						<div id="contenidoTabla">	
+							<br>							
+							<table id="tablero">
+							</table>
+							<br>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3"> 
+					<br>
+					<h1 class = "texto">Movimientos: </h1>
+					<h1 id = "cantidadMovimientos">0</h1>
+					<h1 class = "texto">Tiempo: </h1>
+					<h1 id = "tiempo">00:00:00 </h1>
+				</div>
+			</div>
+		</div>	
+		
+		<footer>
+			<h6>
+				Estudiante: Edwin Emmanuel Masís Serrano<br>
+				Universidad Hispanoamericana<br>
+				Proyecto corto #1<br>
+				<img class = "logo" src="uhLogo.png" alt="Logo"></img>
+			</h6>
+		</footer>
+		
+	</body>
+</html> 
